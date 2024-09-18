@@ -1,0 +1,138 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+
+body {
+    font-family: 'Gilroy', sans-serif;
+    color: rgb(0, 33, 182);
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+
+
+.headline {
+    text-shadow: 2px 2px 5px #1a1a1a,
+        /* темная мягкая тень */
+        -3px 3px 8px #ff0066,
+        /* розовый акцент */
+        4px -4px 10px #00ccff,
+        /* голубая тень */
+        -6px 6px 15px #ffcc00,
+        /* золотистая тень */
+        8px -8px 20px #66ff66,
+        /* светло-зеленая тень */
+        -10px 10px 25px #9900ff;
+    text-transform: uppercase;
+}
+
+li>a {
+    text-decoration: underline;
+    text-decoration-color: #d1135f;
+    text-decoration-style: dashed;
+
+}
+
+span {
+    text-decoration: line-through;
+}
+
+
+.paragraph,
+.title {
+    font-style: italic;
+    color: black;
+    text-align: right;
+    text-decoration: overline;
+}
+
+
+.fragment {
+    text-decoration: underline;
+    text-decoration-color: #ff0066;
+    text-decoration-style: double;
+}
+
+.article {
+    text-decoration: overline;
+    text-align: right;
+}
+
+.paragraph-title {
+    text-align: justify;
+}
+
+.title-portfolio {
+    color: #132238;
+    font-family: "Work Sans";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.title-hmwrl {
+    color: #556070;
+
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+
+.about {
+    color: #1E1B39;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "DM Sans";
+    font-size: 88px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 95px;
+}
+
+.paragraph-about {
+    color: #474464;
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px;
+
+}
+
+.title-inroduce {
+    color: #091133;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Roboto;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 66px;
+    letter-spacing: 1px;
+}
+
+.lorem {
+    color: #505F98;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+
+}
