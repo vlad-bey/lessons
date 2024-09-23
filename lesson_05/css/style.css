@@ -1,0 +1,441 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+body {
+    padding: 0px 50px;
+    color: #FFD97D;
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+    word-spacing: 2px;
+
+}
+
+
+/* Заголовки */
+h2 {
+    text-transform: capitalize;
+    background-color: cornflowerblue;
+    font-size: 40px;
+    font-size: 40px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-style: double;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Св-ство для всех р */
+p[class*="paragraph"] {
+    background-color: #136adb;
+}
+
+
+
+/* Изображения общие свойства*/
+
+
+/* Заголовок */
+.subtitle {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 3px 5px 6px;
+    background-color: #000102;
+    /* padding: 40px 30px 20px 10px; */
+    padding-top: 40px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+
+}
+
+
+
+/* Первый абзац */
+.note {
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(39, 98, 150);
+}
+
+.note-style {
+    writing-mode: vertical-rl;
+    padding-right: 60px;
+    padding-left: 50px;
+    padding-inline-start: 40px;
+    padding-inline-end: 60px;
+}
+
+
+
+/* Якорь */
+.sublist {
+    background-color: aqua;
+    padding: 15px 25px;
+}
+
+.sublist li>a {
+    color: hsla(234, 96%, 51%, 0.747);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+
+}
+
+.pict {
+    padding: 50px;
+}
+
+
+
+/* Первый пункт  (level-2) padding*/
+.paragraph {
+    padding-block: 25px 45px;
+    padding-inline: 30px 25px;
+    writing-mode: vertical-rl;
+}
+
+
+
+/* Второй пункт (level-2) padding */
+.pic {
+    padding: 20px;
+
+}
+
+.paragraph-2 {
+    padding-block-start: 40px;
+    padding-block-end: 20px;
+    padding-inline-start: 37px;
+    padding-inline-end: 22px;
+    writing-mode: vertical-rl;
+
+
+}
+
+.text {
+    background-color: #de05f1;
+    padding-inline-start: 37px;
+    padding-inline-end: 40px;
+
+}
+
+.list-article li {
+    background-color: #800aee;
+    padding: 15px;
+
+}
+
+.list-article {
+    margin-bottom: 20px;
+}
+
+
+
+
+/* Раздел 3  margin+level2*/
+
+.pic {
+    margin-top: 50px;
+    margin-left: 90px;
+    margin-bottom: 20px;
+
+}
+
+.paragraph-31 {
+    margin: 0px 10px 15px -60px;
+}
+
+.paragraph-32 {
+    margin-top: -35px;
+    margin-bottom: 30px;
+
+}
+
+.paragraph-33 {
+    writing-mode: vertical-rl;
+    margin-inline-start: 50px;
+    margin-inline-end: 40px;
+    margin-block-end: 100px;
+}
+
+
+
+/* Раздел 4 */
+
+.picture {
+    max-width: 600px;
+    min-width: 200px;
+
+}
+
+.redbull {
+    color: #000102;
+    background-color: #e41313;
+    font-style: italic;
+    text-decoration: overline;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+/* Пункт 5 */
+
+.pic- {
+    max-width: 600px;
+}
+
+.paragraph-5 {
+    width: 100%;
+    margin-left: 600px;
+
+}
+
+.list-racer li {
+    background-color: #cc0d0d;
+    width: 100%;
+
+}
+
+
+
+/* Пункт 7 */
+
+.paragraph-7 {
+    /* height: 40px; */
+    border-left: 10px solid #000;
+    box-sizing: content-box;
+    padding-left: 50px;
+    margin-left: 20px;
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.paragraph-71 {
+    /* overflow: scroll; */
+    overflow: hidden;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.fragment {
+    width: 500px;
+    background-color: #d13131;
+    display: block;
+    padding-top: 20px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+
+/* Макет 1 */
+.footer {
+    margin-left: -50px;
+    margin-right: -50px;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+
+.homework-1 {
+    margin-top: 50px;
+    background-color: #fff;
+    margin-left: -50px;
+    margin-right: -50px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    font-size: 0;
+}
+
+.content {
+    width: 540px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.content>h3 {
+    color: var(--Colour-Main-Blue-900, #091133);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* Medium 50 */
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 66px;
+    /* 132% */
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.content>p {
+    color: var(--Colour-Main-Blue-500, #505F98);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* Regular 18 */
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 166.667% */
+    margin-bottom: 20px;
+}
+
+.content>a {
+    color: var(--colour-secondary-white-100-general, #FFF);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* Medium 16 */
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    /* 162.5% */
+    background: var(--Colour-Main-Blue-800, #111B47);
+    width: 189px;
+    padding-block: 5px;
+    margin-inline-end: 30px;
+    margin-bottom: 20px;
+
+}
+
+/* Другий макет */
+.homework-2 {
+    background-color: var(--Colour-Background-Light-Grey, #FBFBFD);
+    width: 520px;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+
+
+
+}
+
+.content-title {
+    margin-bottom: 70px;
+}
+
+.content-title>h3 {
+    color: var(--Colour-Main-Blue-900, #091133);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* Medium 36 */
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+    /* 133.333% */
+    margin-bottom: 16px;
+
+}
+
+.content-title>p {
+    color: var(--Colour-Main-Blue-400, #6F7CB2);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* Regular 16 */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+    margin-bottom: 20px;
+}
+
+.table {
+    font-size: 0;
+    margin: 0 -15px;
+}
+
+.table {
+    display: inline-block;
+    width: 50%;
+    padding: 0 15px;
+    margin-bottom: 32px;
+    vertical-align: top;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #5d6970;
+}
+
+.table>h3 {
+    color: var(--Colour-Main-Blue-900, #091133);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+/* Макет-3 */
+
+.homework-3 {
+    font-family: "Manrope", sans-serif;
+    background-color: #262626;
+
+}
+.dark-title{
+    margin-bottom: 80px;
+}
+.dark-title>h3{
+    color: #FFF;
+    font-size: 38px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        padding-left: 160px;
+        padding-top: 150px;
+        margin-bottom: 14px;
+        /* 57px */
+}
+
+.dark-title>p{
+    color: #999;
+    font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        padding-left: 161px;
+        align-self: stretch;
+        /* 27px */
+}
+
+.grid{
+    margin-inline: -15px;
+        font-size: 0;
+        color: #999;
+}
+
+.list{
+    display: inline-block;
+        inline-size: 33.333%;
+        padding-inline: 15px;
+        margin-block-end: 30px;
+        vertical-align: top;
+}
+
+.lists-content{
+    min-block-size: 284px;
+        padding-block: 50px;
+        padding-inline: 50px;
+        font-size: 18px;
+        line-height: 1.5;
+        
+}
+
+.head{
+    margin-block-end: 30px;
+}
+
+.head>h3{
+    display: inline-block;
+        vertical-align: middle;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.5;
+        color: #fff;
+}
