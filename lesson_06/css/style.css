@@ -1,0 +1,507 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,800&display=swap");
+
+
+body {
+
+    color: #000;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: #45a29e;
+    margin: 0 auto;
+
+
+
+
+
+
+
+}
+
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    /*clip */
+
+}
+
+/* Властивість для вісх img */
+img {
+    max-width: 300px;
+    width: 100%;
+}
+
+
+
+/* Шапка */
+
+.main-header {
+    max-width: 100%;
+    background-color: #49c5b6;
+    padding-block: 30px;
+
+
+    margin: 0 auto;
+
+
+}
+
+.header {
+    max-width: 1870px;
+    margin-inline: 120px;
+    margin: 0 auto;
+
+    /* max-width: 2046px; */
+
+
+
+}
+
+
+/* Заголовок шапки */
+.content {
+    margin-inline: 120px;
+    padding-inline: 15px;
+
+}
+
+.one {
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+    margin-block-end: 15px;
+}
+
+
+/* Список шапки */
+.list {
+    padding: 20px;
+    background: rgb(39, 121, 167);
+    background: radial-gradient(circle, rgba(39, 121, 167, 1) 0%, rgba(16, 91, 131, 1) 100%);
+    border-radius: 30px;
+    box-shadow: 7px 7px 0px 0px #0B2447;
+
+}
+
+.menu-item {
+    margin-block-end: 15px;
+
+}
+
+.menu-item span {
+    background: url('../img/lupa.svg') left/ 20px no-repeat;
+    padding-left: 30px;
+    min-height: 24px;
+    text-decoration: dotted underline;
+
+
+
+}
+
+
+
+
+/* Практика */
+
+/* Перша частина (level 1) */
+main {
+    max-width: 1826px;
+    margin-inline: 200px;
+
+
+}
+
+.border-1>h2,
+.border-2>h2 {
+    padding-block-start: 20px;
+    font-size: 26px;
+    font-weight: 800;
+
+}
+
+
+.border-1>p {
+    max-width: 700px;
+    background-color: #fff;
+    border: 8px solid #da0a0a;
+    margin-block-end: 20px;
+
+}
+
+.border-1>span {
+    background-color: #00d3f8;
+    border: 8px solid #adda0a;
+
+}
+
+.border-1>img {
+    border: 8px solid #0a3bda;
+    margin-block-end: 20px;
+}
+
+
+
+
+
+
+/* Перша частина (level 2) */
+.border-2>h2 {
+    margin-bottom: 20px;
+}
+
+
+.level-21,
+.level-22,
+.level-23 {
+    display: inline-block;
+    margin-block-end: 20px;
+    padding: 15px;
+    max-width: 330px;
+    margin-inline: 15px;
+}
+
+
+.level-21 {
+    border-inline: 5px groove red;
+    border-block: 10px groove rgb(10, 128, 224);
+
+}
+
+.level-22 {
+    border-inline: 5px ridge green;
+    border-block: 5px groove #fff;
+}
+
+.level-23 {
+    border-inline-start: 5px outset brown;
+    border-inline-end: 15px outset rgb(18, 204, 80);
+    border-block-start: 10px outset #390cdd;
+    border-block-end: 8px outset #fff;
+}
+
+
+/* Перша частина (Використання outline) */
+.outline {
+    margin-block-end: 30px;
+}
+
+.outline>h3 {
+    font-weight: 800;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.outline>.link-1,
+.link-2 {
+    background-color: #0084f0;
+    color: rgb(255, 123, 0);
+    padding-inline: 20px;
+    margin-inline: 50px;
+    margin-block-end: 20px;
+
+}
+
+.link-1 {
+    outline: 5px solid black;
+    outline-offset: 8px;
+    border-bottom: 4px dotted black;
+    border-radius: 10px;
+}
+
+.link-2 {
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.link-2:focus {
+    outline: 5px double darkorange;
+    outline-offset: 15px;
+
+
+
+}
+
+
+/* Використання box-shadow */
+.box-shdw {
+    margin-block-end: 50px;
+}
+
+.box-shdw>h3 {
+    font-size: 36px;
+    font-weight: 800;
+
+}
+
+.box-shdw>p {
+    max-width: 400px;
+    padding-inline-start: 10px;
+    margin-block-end: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px,
+        rgba(240, 46, 170, 0.3) 10px 10px,
+        rgba(240, 46, 170, 0.2) 15px 15px,
+        rgba(240, 46, 170, 0.1) 20px 20px,
+        rgba(240, 46, 170, 0.05) 25px 25px;
+
+}
+
+.box-shdw>span {
+    background-color: gray;
+    background-color: #fff;
+    box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.2) inset;
+    border-radius: 10px;
+}
+
+.box-shdw>img {
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+    margin-block-start: 45px;
+}
+
+
+
+/* Використання backgrond */
+.background {
+    margin-block-end: 30px;
+}
+
+.background>h3 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-block-end: 20px;
+}
+
+.background>p {
+    padding: 20px;
+    max-width: 350px;
+    margin-inline: 20px;
+    margin-block: 20px;
+}
+
+
+.bck1 {
+    background: linear-gradient(90deg, rgba(39, 121, 167, 1) 0%, rgba(16, 131, 37, 1) 100%);
+    display: inline-block;
+    min-height: 220px;
+}
+
+.bck2 {
+    background: radial-gradient(circle, rgba(39, 121, 167, 1) 0%, rgba(125, 118, 224, 1) 100%);
+    display: inline-block;
+    min-height: 220px;
+}
+
+.bck3 {
+    background-image: url("../img/los-angl.jpg");
+    display: inline-block;
+    min-height: 220px;
+    background-size: cover;
+}
+
+.bck4 {
+    display: block;
+    background-image: url("../img/marvel.jpg");
+    background-attachment: fixed;
+    min-height: 600px;
+
+}
+
+.bck5 {
+    display: inline-block;
+    background-image: url("../img/mike-wazovski.jpg");
+    min-width: 500px;
+    min-height: 220px;
+    background-size: 100px;
+}
+
+.bck6 {
+    display: inline-block;
+    background-image: url("../img/pattern.jpg");
+    min-width: 600px;
+    min-height: 420px;
+}
+
+.bck7 {
+    display: inline-block;
+    min-height: 220px;
+    background: url("../img/mike-wazovski.jpg") no-repeat 0 0 / 200px,
+        linear-gradient(55.95deg, rgba(255, 64, 58, 0.3) 0%, rgba(247, 94, 5, 0.3) 100%),
+        url("../img/pattern.jpg") no-repeat right top / 800px;
+}
+
+
+/* Макети */
+/* Макет-1 */
+.footer-maket-1 {
+    font-family: "Manrope", sans-serif;
+    background-color: #1e1e1e;
+    padding-bottom: 50px;
+
+
+
+
+}
+
+.maket1 {
+    background: url("../img/button.svg") center/470px no-repeat, url("../img/gradient_background.png") center/cover no-repeat, url("../img/multi.jpg") center/cover no-repeat;
+    min-height: 860px;
+}
+
+.content-title {
+
+
+
+    margin: 0 auto;
+    text-align: center;
+
+
+    font-style: normal;
+    font-family: "Manrope", sans-serif;
+
+
+}
+
+
+.content-title>h3 {
+    max-width: 1096px;
+    margin: 0 auto;
+    color: #FFF;
+    padding-block-end: 23px;
+    margin-block-end: 14px;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-block-start: -55px;
+
+}
+
+.content-title>p {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1096px;
+    padding-inline: 15px;
+    color: #999;
+    font-size: 18px;
+    font-weight: 400;
+    margin-block-end: 50px;
+}
+
+
+
+.article>img {
+
+    width: 28px;
+    height: 28px;
+    padding-inline-end: 4px;
+}
+
+.article {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #E50000;
+    padding: 18px 24px 18px 24px;
+    font-size: 18px;
+    color: #FFF;
+    font-size: 18px;
+    border-radius: 8px;
+
+}
+
+
+
+
+/* Макет-2 */
+.footer-maket-2 {
+    background: #FDF0E9;
+
+
+}
+
+.content-1 {
+    padding-inline: 50px;
+
+    margin: 0 auto;
+}
+
+.item-4 {
+    margin-inline: 170px;
+    display: inline-block;
+    max-width: 470px;
+}
+
+.item-4>h3 {
+    max-width: 93px;
+    padding-block-start: 20px;
+    margin-block-end: 20px;
+    color: #EF6D58;
+    font-feature-settings: 'liga' off, 'clig' off;
+    /* H5 */
+    font-family: Epilogue;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    /* 200% */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+}
+
+.item-4>h4 {
+    max-width: 397px;
+    color: #391400;
+    font-feature-settings: 'liga' off, 'clig' off;
+    /* H2 */
+    font-family: Epilogue;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 64px;
+    /* 114.286% */
+    letter-spacing: -1px;
+    margin-block-end: 26px;
+}
+
+.item-4>p {
+    color: #391400;
+    font-feature-settings: 'liga' off, 'clig' off;
+    /* Text_Big */
+    font-family: Epilogue;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    max-width: 470px;
+    margin-block-end: 26px;
+}
+
+.content-title-1 {
+    color: rgba(57, 20, 0, 0.64);
+    padding-block-end: 16px;
+    background: url("../img/check.png") left top / 32px no-repeat;
+    min-height: 32px;
+    padding-inline-start: 48px;
+    font-size: 16px;
+    line-height: 2;
+
+}
+
+.item-4,
+.item-5 {
+
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.item-5 {
+    display: inline-block;
+
+}
+
+.item-5>img {
+    max-width: 530px;
+}
