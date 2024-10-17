@@ -1,0 +1,378 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:regular,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,800&display=swap");
+
+
+
+
+body {
+    background-color: #faff91;
+    font-size: 36px;
+    font-family: "Cormorant Infant", serif;
+
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-block-end: 20px;
+
+}
+
+.subtitle {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+    margin-block-end: 20px;
+}
+
+.text {
+    padding: 20px;
+    font-size: 27px;
+    line-height: 1.5;
+    background-color: #9be8e6;
+    border-radius: 20px;
+
+}
+
+.text:not(:last-child) {
+    margin-block-end: 20px;
+}
+
+[class*="__container"]:not(.homework-1__container), .footer {
+    max-width: 1230px;
+    width: 100%;
+    padding-inline: 15px;
+    margin-inline: auto;
+}
+
+
+.header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: #fff;
+    position: fixed;
+    z-index: 60;
+
+}
+
+.header__menu {
+    text-align: center;
+    padding: 15px;
+    font-size: 0;
+
+}
+
+.menu__item {
+    position: relative;
+    font-size: 26px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 23.3333%;
+    text-align: center;
+
+
+}
+
+.menu__sublist {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    padding: 10px;
+    background-color: black;
+    transition: all 0.2s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu__item a:hover,
+.menu__sub-content a:hover {
+    text-decoration: underline;
+
+}
+
+.menu__sub-content--padding {
+    padding-block-start: 20px;
+}
+
+.menu__item:hover .menu__sublist {
+    border-radius: 10px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.main__container {
+    padding-block: 60px 20px;
+}
+
+[class^="main__"] {
+    margin-block-end: 20px;
+}
+
+/* Position type */
+
+
+
+.example__body {
+    text-align: center;
+}
+
+[class^="example__box"] {
+    display: inline-block;
+    margin-inline-end: 15px;
+    margin-block-end: 15px;
+}
+
+.type-position__relative--margin,
+.type-position__absolute--margin,
+.type-position__fixed--margin,
+.type-position__sticky--margin,
+.type-position__z-index--margin {
+    margin-block-end: 30px;
+}
+
+.example__box-1,
+.example__box-4 {
+    border-radius: 50%;
+    background-color: aqua;
+
+    width: 100px;
+    height: 100px;
+}
+
+.example__box-2,
+.example__box-5 {
+    border-radius: 50%;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.example__box-3,
+.example__box-6 {
+    border-radius: 50%;
+    background-color: green;
+    width: 100px;
+    height: 100px;
+}
+
+.absolute-container {
+    position: relative;
+}
+
+.box-5 {
+    position: relative;
+    top: 20px;
+    right: 180px;
+}
+
+.box-7 {
+    position: absolute;
+    bottom: 80px;
+    right: 30px;
+}
+
+.fixed-container {
+    position: relative;
+}
+
+.box-12 {
+    position: fixed;
+    left: 14px;
+    top: 150px;
+    z-index: 60;
+}
+
+.body-sticky {
+    background: url("../img/f1.webp") center / cover;
+    height: 1000px;
+    position: relative;
+}
+
+.box-13 {
+    position: sticky;
+    top: 60px;
+}
+
+.box-16 {
+    position: relative;
+    z-index: 2;
+}
+
+.box-18 {
+    position: relative;
+    right: 180px;
+}
+
+
+.homework-1--margin {
+    margin-block-end: 20px;
+}
+
+.homework-1__container {
+    width: 570px;
+    background-color: #2b303b;
+    height: 580px;
+
+
+}
+
+.homework-1__container {
+    margin: 0 auto;
+    position: relative;
+}
+
+.homework-1__img-laptop::before {
+    content: url("../img/oval-background.svg");
+    position: absolute;
+    z-index: -1;
+    top: 72px;
+    left: 96px;
+
+}
+
+.homework-1__img-laptop::after {
+    content: url("../img/backgound-laptop.svg");
+    position: absolute;
+    z-index: -1;
+    top: -24px;
+    left: -21px;
+
+}
+
+.homework-1__img-laptop {
+    position: relative;
+    top: 24px;
+    left: 21px;
+    z-index: 2;
+
+}
+
+.homework-1__img-shape {
+    z-index: 4;
+    position: absolute;
+    top: 37px;
+    right: 153px;
+
+}
+
+.homework-1__img-shape::after {
+    content: url("../img/cloud.svg");
+    position: absolute;
+    top: 43px;
+    right: -153px;
+
+}
+
+.homework-1__img-woman::after {
+    content: url("../img/background-woman.svg");
+    position: absolute;
+    z-index: -1;
+    top: -36px;
+    right: 0px;
+}
+
+.homework-1__img-woman::before {
+    content: url("../img/vector.svg");
+    position: absolute;
+    top: 306px;
+    right: 160px;
+}
+
+.homework-1__img-woman {
+    position: absolute;
+    top: 223px;
+    right: 0px;
+    z-index: 2;
+}
+
+
+
+.homework-1__img-block::after {
+    content: url("../img/combined-shape.svg");
+    position: relative;
+    top: -92px;
+    left: -270px;
+}
+
+.homework-1__img-block {
+    position: absolute;
+    top: 430px;
+    left: 55px;
+    z-index: 2;
+
+}
+
+.homework-2{
+    font-family: "Epilogue", sans-serif;
+}
+.homework-2--margin {
+    margin-block-end: 20px;
+}
+
+.card__body {
+    background-color: #2b303b;
+
+    max-width: 480px;
+    max-height: 688px;
+    margin: 0 auto;
+    
+    
+        position: relative;
+}
+
+.card__content {
+    /* background: url('../img/stairs.jpg') 0 0 / cover no-repeat scroll; */
+    width: 464px;
+    padding: 16px 16px 96px 16px;
+    
+
+}
+
+.card__image{
+    background-color: #5C2000;
+        opacity: 0.3181;
+    width: 448px;
+    
+    
+    
+}
+
+.card__button {
+    position: absolute;
+    top: 416px;
+    left: 50px;
+    border-radius: 19px;
+        background: #FFF;
+        min-width: 84px;
+        text-align: center;
+}
+
+.card__button:hover{
+    background-color: black;
+    color: #fff;
+}
+
+.card__button>a{
+    
+    font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+}
+.card__title {
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-size: 40px;
+        font-style: normal;
+        font-weight: 800;
+        color: #fff;
+        position: absolute;
+        top: 474px;
+        left: 48px;
+}
+

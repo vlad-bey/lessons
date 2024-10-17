@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Домашнє завдання 10</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header header--margin">
+            <div class="header__container">
+                <ul class="header__menu menu">
+                    <li class="menu__item"><a href="#position">Position type</a>
+                        <ul class="menu__sublist">
+                            <li class="menu__sub-content menu__sub-content--padding"><a href="#static">Position
+                                    static</a></li>
+                            <li class="menu__sub-content menu__sub-content--padding"><a href="#relative">Position
+                                    relative</a></li>
+                            <li class="menu__sub-content menu__sub-content--padding"><a href="#absolute">Position
+                                    absolute</a></li>
+                            <li class="menu__sub-content menu__sub-content--padding"><a href="#fixed">Position fixed</a>
+                            </li>
+                            <li class="menu__sub-content menu__sub-content--padding"><a href="#sticky">Position
+                                    sticky</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="#z-index">z-index</a></li>
+                    <li class="menu__item"><a href="#homework">Homework</a>
+                        <ul class="menu__sublist">
+                            <li class="menu__sub-content menu__sub-content--padding"><a
+                                    href="#position-type1">Homework-1</a></li>
+                            <li class="menu__sub-content menu__sub-content--padding"><a
+                                    href="#position-type2">Homework-2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main class="main main--margin">
+            <div class="main__container">
+                <div class="main__position-type type-position" id="position">
+                    <h1 class="type-position__title title">
+                        Типи позиціонування
+                    </h1>
+                    <p class="main__text text">
+                        Різне CSS позиціонування дуже часто
+                        використовується при верстці макетів
+                        і відкриває для нас нові цікаві можливості
+                        розташування елементів у потоці.
+                        Але треба бути обережними та вміти поводитися
+                        з цими можливостями грамотно.
+                    </p>
+                    <div class="type-position__static static-container">
+                        <h2 class="static-container__subtitle subtitle" id="static">Позиціонування cтатичне (static)
+                        </h2>
+                        <p class="main__text text">
+                            Елементи відображаються як зазвичай (в потоці формування документа). Використання
+                            властивостей left, top, right, bottom
+                            та z-index не призводить до будь-яких результатів. Без задання.
+                        </p>
+                    </div>
+                    <div id="relative"
+                        class="type-position__relative relative-container type-position__relative--margin">
+                        <h2 class="relative-container__subtitle subtitle">
+                            Позиціонування відносне (relative)
+                        </h2>
+                        <p class="main__text text">
+                            relative - відносне позиціонування.
+                            Об'єкт позіціонується відносно свого
+                            поточного місця положення.
+                            (відносно свого положення в коді)
+                        </p>
+                        <div class="relative-container__example example">
+                            <div class="example__body ">
+                                <p class="example__text text">Приклад (до)</p>
+                                <div class="example__box-1 box"></div>
+                                <div class="example__box-2 box"></div>
+                                <div class="example__box-3 box"></div>
+                                <p class="example__text text">Приклад (після)</p>
+                                <div class="example__box-4 box-4"></div>
+                                <div class="example__box-5 box-5"></div>
+                                <div class="example__box-6 box-6"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="absolute"
+                        class="type-position__absolute absolute-container type-position__absolute--margin">
+                        <h2 class="absolute-container__subtitle subtitle">
+                            Позиціонування абсолютне (absolute)
+                        </h2>
+                        <p class="main__text text">
+                            position: absolute; — абсолютне (безумовне) позиціонування. Об'єкт позиціонується відносно
+                            першого батьківського
+                            елементу, position якого відмінний від static. Об'єкт втрачає свою блочну сутність
+                            та простір який він займав.
+                        </p>
+                        <div class="absolute-container__example example ">
+                            <div class="example__body">
+                                <p class="example__text text">Приклад (до)</p>
+                                <div class="example__box-1 box"></div>
+                                <div class="example__box-2 box"></div>
+                                <div class="example__box-3 box"></div>
+                                <p class="example__text text">Приклад (після)</p>
+                                <div class="example__box-4 box-7"></div>
+                                <div class="example__box-5 box-8"></div>
+                                <div class="example__box-6 box-9"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="fixed" class="type-position__fixed fixed-container type-position__fixed--margin">
+                        <h2 class="fixed-container__subtitle subtitle">
+                            Позиціонування фіксоване (fixed)
+                        </h2>
+                        <p class="main__text text">
+                            position: fixed; — фіксоване позиціонування відносно вікна браузера (вюпорта). Об'єкт
+                            втрачає блочну сутність, положення
+                            в коді, простір. Не бере участі у скролі (не скролиться з контентом).
+                        </p>
+                        <div class="fixed-container__example example fixed-container__example--margin">
+                            <div class="example__body">
+                                <p class="example__text text">Приклад (до)</p>
+                                <div class="example__box-1 box"></div>
+                                <div class="example__box-2 box"></div>
+                                <div class="example__box-3 box"></div>
+                                <p class="example__text text">Приклад (після)</p>
+                                <div class="example__box-4 box-10"></div>
+                                <div class="example__box-5 box-11"></div>
+                                <div class="example__box-6 box-12"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sticky" class="type-position__sticky sticky-container type-position__sticky--margin">
+                        <h2 class="sticky-container__subtitle subtitle">
+                            Позиціонування абсолютне (sticky)
+                        </h2>
+                        <p class="main__text text">
+                            position: sticky; — гібридне поєднання значень static та fixed. Спочатку елемент поводитися
+                            як static, але після того,
+                            як скрол доходить до нього, стає fixed. Залишається блочним.
+
+                            ВАЖЛИВО! Не працює, якщо у батьківських об'єктах присутній overflow: hidden;.
+                            Працює з новим значенням overflow: clip для батьківських блоків. 
+                        </p>
+                        <div class="sticky-container__example example sticky-container__example--margin">
+                            <div class="example__body body-sticky">
+                                <div class="example__box-4 box-13"></div>
+                                <div class="example__box-5 box-14"></div>
+                                <div class="example__box-6 box-15"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="z-index" class="type-position__index index-container type-position__index--margin">
+                        <h2 class="index-container__subtitle subtitle">
+                            Накладання обʼєктів (z-index)
+                        </h2>
+                        <p class="main__text text">
+                            z-index — перекривання обʼєктів одного іншим. Найвищий z-index (тобто ближче до нас) в
+                            елемента, що попереду (за
+                            замовченням це об'єкт нижче по коду, або auto чи 0).
+                            Якщо елементи позиціоновані один над іншим, то елемент з більшим значенням z-index буде
+                            накривати собою елементи з
+                            меншим значенням z-index як в прикладі на картинці.
+
+                        </p>
+                        <div class="index-container__example example index-container__example--margin">
+                            <div class="example__body body-index">
+                                <div class="example__box-4 box-16"></div>
+                                <div class="example__box-5 box-17"></div>
+                                <div class="example__box-6 box-18"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer footer--margin">
+            <div id="homework" class="homework homework--margin">
+                <h2 class="homework__title title">
+                    Homework
+                </h2>
+
+                <div id="position-type1" class="homework-1 homework-1--margin">
+                    <h3 class="homework-1__title title">
+                        Homework-1
+                    </h3>
+                    <div class="homework-1__container">
+                        <div class="homework-1__content">
+
+                            <div class="homework-1__img-laptop">
+                                <img src="/img/laptop.webp" alt="#">
+                            </div>
+                            <div class="homework-1__img-shape">
+                                <img src="/img/shape.webp" alt="#">
+                            </div>
+                            <div class="homework-1__img-woman">
+                                <img src="/img/woman.webp" alt="#">
+                            </div>
+                            <div class="homework-1__img-block">
+                                <img src="/img/block.svg" alt="#">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="position-type2" class="homework-2 homework-2--margin">
+                    <h3 class="homework-2__title title">
+                        Homework-2
+                    </h3>
+                    <div class="homework-2__container">
+                        <div class="homework-2__content card">
+                            <div class="card__body">
+                                <div class="card__content">
+                                    <div class="card__image">
+                                        <img src="/img/stairs.jpg" alt="">
+                                    </div>
+                                    <div class="card__button"><a href="#" class="card__link">Design</a></div>
+                                    <h3 class="card__title">Sofa</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
