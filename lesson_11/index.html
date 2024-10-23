@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Домашнє завдання 11</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header header--margin">
+            <div class="header__container">
+                <ul class="header__menu menu">
+
+                    <li class="menu__item menu__item--2d"><a href="#2d">Transform 2d</a></li>
+                    <li class="menu__item menu__item--3d"><a href="#3d">Transform 3d</a></li>
+                    <li class="menu__item menu__item--car"><a href="#homework">Car</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="transform">
+                <div class="transform__container">
+                    <div class="transform__body">
+                        <div class="transform__2d 2d">
+                            <h1 class="2d__title title" id="2d">Transform 2D</h1>
+                            <div class="2d__list list">
+                                <div class="2d__item card">
+                                    <div class="card__body">
+                                        <div class="card__block card__block--translate"></div>
+                                        <p>translate (30px, 45px)</p>
+                                    </div>
+                                </div>
+                                <div class="2d__item card">
+                                    <div class="card__body">
+                                        <div class="card__block card__block--translate-x"></div>
+                                        <p>translateX (20px)</p>
+                                    </div>
+                                </div>
+                                <div class="2d__item card">
+                                    <div class="card__body">
+                                        <div class="card__block card__block--translate-y"></div>
+                                        <p>translateY (20px)</p>
+                                    </div>
+                                </div>
+                                <div class="2d__item card">
+                                    <div class="card__body">
+                                        <div class="card__block card__block--rotate"></div>
+                                        <p>rotate (20deg)</p>
+                                    </div>
+                                </div>
+                                <div class="2d__item card">
+                                    <div class="card__body">
+                                        <div class="card__block card__block--rotate-x"></div>
+                                        <p>rotateX (40deg)</p>
+                                    </div>
+                                </div>
+                                <div class="2d__item card">
+                                    <div class="card__body">
+                                        <div class="card__block card__block--rotate-y"></div>
+                                        <p>rotateY (40deg)</p>
+                                    </div>
+                                </div>
+                                <div class="2d__item card">
+                                    <div class="card__body">
+                                        <div class="card__block card__block--scale"></div>
+                                        <p>scale (2)</p>
+                                    </div>
+                                </div>
+                                <div class="2d__item card">
+                                    <div class="card__body">
+                                        <div class="card__block card__block--scale-x"></div>
+                                        <p>scaleX (2)</p>
+                                    </div>
+                                </div>
+                                <div class="2d__item card">
+                                    <div class="card__body">
+                                        <div class="card__block card__block--scale-y"></div>
+                                        <p>scaleY (21)</p>
+                                    </div>
+                                </div>
+                                <div class="2d__item card">
+                                    <div class="card__body">
+                                        <div class="card__block card__block--skew"></div>
+                                        <p>skew (15deg, 30deg)</p>
+                                    </div>
+                                </div>
+                                <div class="2d__item card">
+                                    <div class="card__body">
+                                        <div class="card__block card__block--skew-x"></div>
+                                        <p>skewX (10deg)</p>
+                                    </div>
+                                </div>
+                                <div class="2d__item card">
+                                    <div class="card__body">
+                                        <div class="card__block card__block--skew-y"></div>
+                                        <p>skewY (30deg)</p>
+                                    </div>
+                                </div>
+                                <div class="2d__item card">
+                                    <div class="card__body">
+                                        <div class="card__block card__block--transform-2d-multi"></div>
+                                        <p>experiment</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="transform__3d" id="3d">
+                            <div class="transform__title title">Transform 3D</div>
+                            <div class="transform__list list">
+                                <div class="transform__item card">
+                                    <div class="card__body card__body--perspective">
+                                        <div class="card__block card__block--translate3d"></div>
+                                    </div>
+                                    <p>translate3d (20px 20px 30px)</p>
+                                </div>
+                                <div class="transform__item card">
+                                    <div class="card__body card__body--perspective">
+                                        <div class="card__block card__block--scale3d"></div>
+                                    </div>
+                                    <p>scale3d (1 0.8 0.7)</p>
+                                </div>
+                                <div class="transform__item card">
+                                    <div class="card__body card__body--perspective">
+                                        <div class="card__block card__block--rotate3d"></div>
+                                    </div>
+                                    <p>rotate3d (2, 2, 3, 30deg)</p>
+                                </div>
+                                <div class="transform__item card">
+                                    <div class="card__body card__body--perspective">
+                                        <div class="card__block card__block--origin3d"></div>
+                                    </div>
+                                    <p>perspective: 200px; perspective-origin: center,</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer footer--margin" id="homework">
+            <div class="footer__container car">
+                <div class="car__block">
+                    <div class="car__wheel-1 wheel">
+                        <div class="car__rim-1 rim"></div>
+
+                    </div>
+                    <div class="car__wheel-2 wheel">
+                        <div class="car__rim-2 rim"></div>
+                    </div>
+                    <div class="car__line-1 line"></div>
+                    <div class="car__line-2 line"></div>
+                    <div class="car__line-3 line"></div>
+                    <div class="car__tailight lights"></div>
+                    <div class="car__headlights lights"></div>
+                    <div class="car__spoiler"></div>
+                    <div class="car__grill-1 grill"></div>
+                    <div class="car__grill-2 grill"></div>
+                    <div class="car__grill-3 grill"></div>
+                    <div class="car__door"></div>
+                    <div class="car__window-front"></div>
+                    <div class="car__window-back"></div>
+                    <div class="car__exhaust"></div>
+                </div>
+                <div class="car__roof"></div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
