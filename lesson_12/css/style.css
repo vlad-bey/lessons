@@ -1,0 +1,359 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:regular,600&display=swap");
+
+
+
+body {
+    font-family: "IBM Plex Mono", serif;
+    background: #9bc4d1;
+    overflow: hidden;
+}
+
+
+
+.wrapper {
+    min-height: 100%; 
+    overflow: clip;
+    /*clip */
+}
+
+
+header {
+    padding: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.title__main {
+    text-align: center;
+    font-size: 40px;
+    padding-block-end: 30px;
+}
+
+.title__subtitle {
+    font-size: 30px;
+}
+
+
+
+
+.main__city{
+    position: absolute;
+    width: 10000%;
+    height: 700px;
+    background: url("../img/sity.webp") center / contain repeat-x;
+    z-index: 2;
+    animation-name: city;
+    animation-duration: 1000s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes city{
+    
+    100%{
+        transform: translate(-400000px);
+    }
+}
+
+
+.main__sun {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: url("../img/sun-back.webp") center / contain;
+    left: 40px;
+    z-index: 2;
+    left: 1760px;
+    top: -90px;
+    animation-name: sun;
+        animation-duration: 70s;
+        animation-iteration-count: infinite;
+
+}
+
+@keyframes sun{
+    100%{
+        transform: rotate(2800deg);
+    }
+}
+
+
+
+
+
+.car{
+    z-index: 6;
+    position: absolute;
+    bottom: 60px;
+    left: 120px;
+}
+
+
+.car__body {
+    left: 0px;
+    position: absolute;
+}
+
+
+.car__body {
+    position: relative;
+
+}
+
+
+.body__first {
+    height: 100px;
+    width: 300px;
+    background: linear-gradient(to bottom, #ff9999, #ff3333);
+    border-radius: 50% 50% 0% 100% / 100% 93% 7% 0%;
+    border: 2px black solid;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* бампер */
+.color {
+    background: #c5c4c4;
+    width: 50px;
+    height: 20px;
+    border-radius: 20px;
+    position: relative;
+    border: 2px rgb(116, 106, 20) solid;
+    z-index: 3;
+}
+
+.bumper__back {
+    top: -20px;
+    left: -10px;
+}
+
+.bumper__head {
+    top: -40px;
+    left: 260px;
+}
+
+
+
+/* Світло */
+
+.lights {
+    position: absolute;
+    z-index: 1;
+}
+
+.light {
+    width: 30px;
+    height: 40px;
+    position: relative;
+    border-radius: 40%;
+    border: 2px #714b41 solid;
+}
+
+.lights__headlights {
+    top: -140px;
+    left: 273px;
+    background-color: #ffdf7c;
+}
+
+
+.lights__backlights {
+    background-color: #f03737;
+    left: 0px;
+    top: -100px;
+
+}
+
+
+/* Арки колес */
+.archs {
+    position: absolute;
+}
+
+.arch {
+    width: 80px;
+    height: 40px;
+    background-color: #5ecbec;
+    border-radius: 50%;
+    position: relative;
+    z-index: 3;
+    top: 75px;
+    border: 2px #714b41 solid;
+}
+
+
+
+.archs__back {
+    left: 25px;
+    top: -150px;
+}
+
+.archs__head {
+    left: 200px;
+    top: -190px;
+
+}
+
+/* криша */
+
+.car__roof {
+    width: 180px;
+    height: 80px;
+    border-radius: 50% 50% 0% 100% / 100% 93% 7% 0%;
+    background: linear-gradient(to top, #ff9999,
+            #ff3333);
+    position: relative;
+    z-index: 4;
+    border-top: 5px #714b41 solid;
+    top: -190px;
+    left: 55px;
+}
+
+
+/* Скло */
+
+.glasses {
+    position: absolute;
+}
+
+.glass {
+    top: -36px;
+    height: 60px;
+    width: 70px;
+    position: relative;
+    z-index: 4;
+    background: #d4faff;
+    border: 2px #714b41 solid;
+}
+
+.glasses__head {
+    border-radius: 0% 100% 0% 100% / 100% 91% 9% 0%;
+    top: -315px;
+    left: 150px;
+}
+
+.glasses__back {
+    border-radius: 100% 0% 0% 100% / 100% 91% 9% 0%;
+    left: 70px;
+    top: -255px;
+}
+
+
+
+
+/* двері */
+
+.doors {
+    position: absolute;
+}
+
+.door {
+    border-inline: 2px black solid;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-block-end: 2px black solid;
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    z-index: 2;
+    top: 30px;
+}
+
+.doors__back {
+    left: 70px;
+    top: -180px;
+}
+
+.doors__head {
+    left: 150px;
+    top: -180px;
+}
+
+
+
+
+
+/* ручка дверей */
+.handle {
+    position: relative;
+}
+
+.hand {
+    width: 30px;
+    height: 13px;
+    border-radius: 30px;
+    border: 2px #714b41 solid;
+    background-color: #ffdf7c;
+    position: relative;
+    z-index: 4;
+    top: 35px;
+}
+
+.handle__back {
+    left: 100px;
+    top: -170px;
+}
+
+.handle__head {
+    left: 160px;
+    top: -183px;
+}
+
+
+/* колеса */
+.wheels {
+    position: absolute;
+}
+
+.tire {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(228, 222, 222);
+    outline: 3px black dotted;
+    /* Диск */
+    border-radius: 50%;
+    z-index: 3;
+    animation-name: wheel;
+    animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+}
+
+@keyframes wheel{
+    100%{
+        transform: rotate(-1000deg);
+    }
+}
+
+.wheels__tire-back {
+    top: -168px;
+    left: 35px;
+}
+
+.wheels__tire-head {
+    top: -228px;
+    left: 210px;
+}
+
+.disk {
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+    border-radius: 50%;
+    position: relative;
+    z-index: 4;
+}
+
+.wheels__disk-back {
+    left: 225px;
+    top: -273px;
+}
+
+.wheels__disk-head {
+    left: 50px;
+    top: -303px;
+}
+
