@@ -1,0 +1,31 @@
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="28" height="28" fill="#1E1E1E"/>
+<g id="Movies &#38; Shows Page - Desktop" clip-path="url(#clip0_34_3)">
+<rect width="1920" height="8955" transform="translate(-1481 -3711)" fill="#141414"/>
+<g id="Container">
+<g id="Sub Container">
+<rect x="-1320.5" y="-2505.5" width="1597" height="3163" rx="11.5" stroke="#262626"/>
+<g id="Container_2">
+<g id="Sub Container_2">
+<g id="Buttons Container">
+<rect x="-29.5" y="-29.5" width="256" height="87" rx="11.5" fill="#0F0F0F"/>
+<rect x="-29.5" y="-29.5" width="256" height="87" rx="11.5" stroke="#1F1F1F"/>
+<g id="Button">
+<rect x="-13.5" y="-13.5" width="55" height="55" rx="7.5" fill="#1A1A1A"/>
+<rect x="-13.5" y="-13.5" width="55" height="55" rx="7.5" stroke="#1F1F1F"/>
+<g id="Icon">
+<path id="Vector 619" d="M22.75 14L5.25 14M5.25 14L13.125 21.875M5.25 14L13.125 6.125" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_34_3">
+<rect width="1920" height="8955" fill="white" transform="translate(-1481 -3711)"/>
+</clipPath>
+</defs>
+</svg>
