@@ -1,0 +1,250 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,700,800,900&display=swap");
+
+body {
+    background-color: #fdf0e9;
+    color: #391400;
+    font-family: "Epilogue", sans-serif;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+[class*="__container"] {
+    max-width: 1200px;
+    /* 1270/16 */
+    margin: 0 auto;
+    padding: 15px;
+    /* 15/16 */
+}
+
+header{
+    padding-inline: 15px;
+}
+
+.header__container {
+    background-color: #EB9486;
+    color: #28293E;
+    font-size: 24px;
+
+    line-height: 1.2;
+    border-radius: 20px;
+    margin-block-start: 15px;
+    margin-block-end: 76px;
+}
+
+.title {
+    text-align: center;
+}
+
+.title__main {
+    font-weight: 700;
+
+}
+
+
+
+.head__list {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(5, 97px);
+    gap: 51px;
+    justify-content: center;
+    margin-block-end: 68px;
+}
+
+
+
+
+.list__item-link {
+    line-height: 2;
+    
+}
+
+
+.list__item-link{
+    text-decoration: underline 2px hsla(21, 100%, 11%, 0);
+        text-underline-offset: 0;
+    
+        transition: text-decoration-color 0.3s, text-underline-offset 0.3s;
+}
+
+
+
+.list__item-link>sup {
+    display: inline-block;
+    transform: translateY(-25%);
+    font-size: 14px;
+
+}
+
+.list__item-link:hover{
+                text-decoration-color: #391400;
+                text-underline-offset: 6px;
+}
+
+@media (max-width: 700px){
+    .list{
+        display: flex;
+        flex: 1 1 2px;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* grid */
+
+.portfolio-head__cards {
+    /* display: grid;
+    grid-auto-rows: 416px;
+    width: 100%;
+    gap: 32px 30px;
+    margin-block-end: 64px; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 30px;
+    grid-template-rows: 720px;
+    grid-auto-rows: 416px;
+    margin-bottom: 80px;
+}
+
+.portfolio-head__card:first-child {
+    grid-column: span 2;
+
+}
+
+
+.portfolio-head__card {
+    position: relative;
+    grid-auto-rows: auto;
+    padding: 51px 48px;
+    display: grid;
+    align-items: end;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: grey;
+}
+
+.portfolio-head__card img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    will-change: transform;
+}
+
+.portfolio-head__card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: scaleY(100%);
+    width: 100%;
+    height: 100%;
+    opacity: 0.3181;
+    transition: transform 0.5s;
+    transform-origin: top;
+    background-color: #5c2000;
+}
+
+
+.portfolio-head__card:hover::before {
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+
+.portfolio-head__card:hover img {
+    transform: scale(1.1);
+}
+
+
+/* card content */
+
+.portfolio-head__content {
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio-head__name {
+    width: fit-content;
+    padding: 5px 15px 1px;
+    margin-block-end: 23px;
+    border-radius: 19px;
+    line-height: 2;
+    color: #391400;
+    background-color: #fff;
+    transition: background-color 0.5s, color 0.3s;
+}
+
+.portfolio-head__name:hover {
+    background-color: #000000;
+    color: #FFF;
+}
+
+
+
+.portfolio-head__subtitle {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #fff;
+}
+
+
+
+.content {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(5, 48px);
+    justify-content: center;
+    justify-items: center;
+}
+
+
+.content__button {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 16px 20px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.content__button:hover {
+    background-color: #EF6D58;
+    color: #fff;
+}
+
+
+
+@media (max-width: 950px){
+    .portfolio-head__cards{
+        grid-column: span 1;
+        grid-row: span 1;
+        grid-template-rows: 416px;
+    }
+        .portfolio-head__card:first-child{
+        grid-column: span 1;
+            
+        }
+}
+
+@media (max-width: 730px){
+    .portfolio-head__card{
+        grid-template-columns: minmax(120px, 360px);
+        grid-column: span 1;
+    }
+        .portfolio-head__card,   .portfolio-head__card:first-child{
+            grid-column: span 2;
+        }
+}
